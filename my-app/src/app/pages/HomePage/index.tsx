@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
 import styled from 'styled-components';
+import TodoInput from 'app/components/Todoinput';
 
 const Wrapper = styled.div`
   width: 100%;
@@ -46,6 +47,7 @@ export function HomePage() {
       <Wrapper>
         <Box>
           <Title>Todo List</Title>
+          <TodoInput />
           <TodoList>
             <TodoItem>
               {' '}
