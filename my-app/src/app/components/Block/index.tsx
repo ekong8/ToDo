@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { StringLiteral } from 'typescript';
 
 export default styled.div<{
   marginTop?: string;
@@ -8,7 +7,7 @@ export default styled.div<{
   marginRight?: string;
 }>`
   margin-top: ${props => props.marginTop || '0'};
-  marginbottom: ${props => props.marginTop || '0'};
-  marginleft: ${props => props.marginTop || '0'};
-  mmarginright: ${props => props.marginTop || '0'};
+  margin-bottom: ${props => props.marginBottom || '0'};
+  margin-left: ${props => props.marginLeft || '0'};
+  margin-right: ${props => props.marginRight || '0'};
 `;
