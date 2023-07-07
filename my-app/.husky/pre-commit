@@ -4,3 +4,4 @@
 yarn checkTs
 yarn lint-staged
 
+npm test

@@ -22,6 +22,10 @@ const Box = styled.div`
   background-color: white;
   border-radius: 15px;
   box-shadow: 0px 25px 100px -60px rgba(0, 0, 0, 0.18);
+  @media (max-width: 425px) {
+    width: 100%;
+    height: 100vh;
+  }
 `;
 
 const Title = styled.h1`
@@ -29,7 +33,13 @@ const Title = styled.h1`
   padding: 15px 25px;
 `;
 
-const TodoList = styled.div``;
+const TodoList = styled.div`
+  height: 450px;
+  overflow-y: auto;
+  @media (max-width: 425px) {
+    height: calc(100vh - 128px);
+  }
+`;
 
 export function HomePage() {
   const { TodoActions } = useTodoSlice();
